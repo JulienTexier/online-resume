@@ -1,29 +1,24 @@
 /* GENERAL STYLE */
 
 body {
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 8px;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin: 15px 15px 15px 15px;
   font-size: 15px;
-  margin: 15px;
 }
 
 h1 {
   font-family: "Encode Sans", sans-serif;
-  font-size: 24px;
+  font-size: 48px;
   font-style: normal;
   font-variant: small-caps;
   font-weight: 400;
   line-height: 14.3px;
-  margin-bottom: 15px;
+  margin-bottom: 35px;
 }
 
 h2 {
   font-family: "Encode Sans", sans-serif;
   font-family: Quicksand;
-  font-size: 16px;
+  font-size: 21px;
   font-style: normal;
   font-variant: small-caps;
   font-weight: 400;
@@ -33,7 +28,7 @@ h2 {
 h3 {
   font-family: "Encode Sans", sans-serif;
   font-family: Quicksand;
-  font-size: 13px;
+  font-size: 17px;
   font-style: normal;
   font-weight: 400;
   line-height: 18.2px;
@@ -42,13 +37,13 @@ h3 {
 h4 {
   font-weight: bold;
   font-family: Quicksand;
-  font-size: 10px;
+  font-size: 17px;
   margin-bottom: 0;
 }
 
 h5 {
   font-family: Quicksand;
-  font-size: 12px;
+  font-size: 18px;
   margin-bottom: 0;
   color: #0055a4;
   text-align: center;
@@ -58,14 +53,14 @@ h5 {
 p,
 span {
   font-family: Quicksand;
-  font-size: 8px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
 }
 
 ul {
   font-family: Quicksand;
-  font-size: 6px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
 }
@@ -77,18 +72,20 @@ i.fab {
 
 /* GENERAL LAYOUT */
 
+.row {
+  width: 100%;
+  margin: auto;
+}
 .leftcolumn {
   float: left;
   width: 70%;
-  margin: auto;
-
+  padding-right: 5px;
 }
 
 .rightcolumn {
   float: left;
   width: 30%;
-  padding-left: 10px;
-  margin: auto;
+  padding-left: 5px;
 }
 
 .subleftcolumn {
@@ -105,7 +102,6 @@ i.fab {
 
 .card {
   padding: 20px;
-  border: none;
   box-shadow: 0.5px 1px 1px 0.5px #888888;
   border: #888888 solid thin;
 
@@ -143,10 +139,9 @@ i.fab {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  margin: 0 -15px;
-  border: #888888 solid thin;
-  border-radius: 15px 15px 5px 5px  ;
-  box-shadow: 0.5px 1px 1px 0.5px #888888;
+  margin: 0;
+  border-radius: 10px;
+  box-shadow: 0.5px 1px 10px 0.5px #888888;
 }
 
 .contact-info,
@@ -155,7 +150,8 @@ i.fab {
   padding-left: 10px;
   margin-top: 10px;
   float: right;
-  width: 120px;
+  width: 200px;
+  font-size: 14px;
 }
 
 .contact-info-title,
@@ -163,7 +159,7 @@ i.fab {
   display: inline;
   margin-right: 10px;
   font-family: Quicksand;
-  font-size: 12px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   display: inline-block;
@@ -171,19 +167,18 @@ i.fab {
 }
 
 .information {
-  width: 125px;
+  width: 200px;
   height: auto;
+  box-shadow: 0.5px 1px 1px 0.5px #888888 solid;
 }
 
 #presentation {
-  margin: 15px 0;
+  margin: 10px 0;
   padding: 15px;
   text-align: center;
-  margin-right: -15px;
-  margin-left: -15px;
-  border: #888888 solid thin;
-  border-radius:  5px 5px 15px 15px ;
-  box-shadow: 0.5px 1px 1px 0.5px #888888;
+  border: solid thin;
+  border-radius: 5px 5px 15px 15px;
+  box-shadow: 0.5px 1px 1px 0.5px #888888 solid;
 }
 
 #presentation div {
@@ -194,7 +189,7 @@ i.fab {
 
 .education-details {
   font-family: Quicksand;
-  font-size: 8px;
+  font-size: 14px;
   font-style: oblique;
 }
 
@@ -210,7 +205,7 @@ i.fab {
 .work-position {
   font-weight: bold;
   font-family: Quicksand;
-  font-size: 8px;
+  font-size: 15px;
   display: inline;
 }
 
@@ -297,6 +292,7 @@ i.fab {
 .language-name {
   margin-bottom: 0px;
   color: #0055a4;
+  font-size: 15px;
 }
 
 .language-level {
@@ -320,119 +316,118 @@ i.fab {
 /* IMAGES */
 
 .avatar {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
 }
 
 #wordcloud {
-  width: 2.5cm;
-  height: 2.5cm;
+  width: 4cm;
+  height: 4cm;
 }
 
 #thp {
   vertical-align: middle;
-  width: 5mm;
-  height: 5mm;
+  width: 10mm;
+  height: 10mm;
   border-radius: 50%;
-  margin: 0 15px;
+  margin: 0 30px;
   float: right;
 }
 
 .accreditations {
   vertical-align: middle;
-  width: 3mm;
-  height: 3mm;
+  width: 6mm;
+  height: 6mm;
   margin-left: 10px;
 }
 
 #aascb {
   vertical-align: middle;
-  width: 2mm;
+  width: 4mm;
   height: auto;
   margin-left: 20px;
 }
 
 #equis {
   vertical-align: middle;
-  width: 3mm;
+  width: 6mm;
   height: auto;
 }
 
 #amba {
   vertical-align: middle;
-  width: 5mm;
+  width: 10mm;
   height: auto;
   margin-left: 15px;
 }
 
 .logo-companies {
   vertical-align: middle;
-  width: 5mm;
+  width: 8mm;
   height: auto;
   border-radius: 10%;
-  margin: 4px 15px;
+  margin: 4px 30px;
   float: right;
 }
 
 #logo-tedx {
   vertical-align: middle;
-  width: 9.5mm;
+  width: 16mm;
   height: auto;
-  margin: 4px 8px;
+  margin: 4px 15px;
   float: right;
 }
 
 #logo-texart {
   vertical-align: middle;
-  width: 5mm;
+  width: 8mm;
   height: auto;
-  margin: -5px 15px;
+  margin: 4px 30px;
   float: right;
 }
 
 #logo-ieseg {
   vertical-align: middle;
-  width: 12.5mm;
+  width: 25mm;
   height: auto;
-  margin: 0px 8px;
+  margin: 0px 15px;
   float: right;
 }
 
 #front-end {
-  width: 12.5mm;
   height: auto;
   margin: 1px auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 40%;
 }
 
 .back-end {
   vertical-align: middle;
-  width: 8.5mm;
+  width: 14mm;
   height: auto;
   margin: 1px auto;
 }
 
 .adobe {
   vertical-align: middle;
-  width: 5.5mm;
+  width: 9mm;
   height: auto;
   margin: 2px 3px;
 }
 
 .office {
   vertical-align: middle;
-  width: 5.5mm;
+  width: 9mm;
   height: auto;
   margin: 2px 0;
 }
 
 .SEO {
   vertical-align: middle;
-  width: 5mm;
+  width: 8mm;
   height: auto;
   margin: 2px;
 }
@@ -451,11 +446,11 @@ i.fab {
 .hobbies-section {
   padding: 20px;
   text-align: center;
-  margin: 0px -15px 5px -15px;
+  margin: 0px 5px;
 }
 
 .hobbies {
-  margin: 20px -15px 5px -15px;
+  margin: 20px 5px;
   display: -ms-flex;
   display: -webkit-flex;
   display: flex;
@@ -475,14 +470,7 @@ i.fab {
   color: rgba(88, 41, 41, 0.699);
 }
 
-/* .sports, .music {
-} */
-
-.other,
-.travel {
-  margin-top: 60px;
+.sports,
+.music {
+  margin-top: 50px;
 }
-
-/* .other p,
-.travel p {
-} */
