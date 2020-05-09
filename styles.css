@@ -1,11 +1,13 @@
 /* GENERAL STYLE */
 
 body {
-  height: 842px;
-  width: 595px;
   margin-left: auto;
   margin-right: auto;
   font-size: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 15px;
+  margin: 15px;
 }
 
 h1 {
@@ -78,12 +80,15 @@ i.fab {
 .leftcolumn {
   float: left;
   width: 70%;
+  margin: auto;
+
 }
 
 .rightcolumn {
   float: left;
   width: 30%;
   padding-left: 10px;
+  margin: auto;
 }
 
 .subleftcolumn {
@@ -102,6 +107,8 @@ i.fab {
   padding: 20px;
   border: none;
   box-shadow: 0.5px 1px 1px 0.5px #888888;
+  border: #888888 solid thin;
+
   margin-bottom: 10px;
 }
 
@@ -137,7 +144,8 @@ i.fab {
   justify-content: space-evenly;
   align-items: center;
   margin: 0 -15px;
-  border-radius: 2px;
+  border: #888888 solid thin;
+  border-radius: 15px 15px 5px 5px  ;
   box-shadow: 0.5px 1px 1px 0.5px #888888;
 }
 
@@ -163,7 +171,7 @@ i.fab {
 }
 
 .information {
-  width: 130px;
+  width: 125px;
   height: auto;
 }
 
@@ -173,7 +181,8 @@ i.fab {
   text-align: center;
   margin-right: -15px;
   margin-left: -15px;
-  border-radius: 2px;
+  border: #888888 solid thin;
+  border-radius:  5px 5px 15px 15px ;
   box-shadow: 0.5px 1px 1px 0.5px #888888;
 }
 
@@ -474,7 +483,6 @@ i.fab {
   margin-top: 60px;
 }
 
-.other p,
+/* .other p,
 .travel p {
-  margin: auto -100%;
-}
+} */
