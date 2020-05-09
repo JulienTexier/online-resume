@@ -28,6 +28,15 @@ h2 {
     line-height: 18.2px;
 }
 
+h3 {
+    font-family: 'Encode Sans', sans-serif;
+    font-family: Quicksand;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18.2px;
+}
+
 h4 {
     font-weight: bold;
     font-family: Quicksand;
@@ -79,6 +88,7 @@ i.fas, i.fab {
 .subleftcolumn {
     float: left;
     width: 35%;
+    padding-left: 5px;
 }
 
 .subrightcolumn {
@@ -285,8 +295,8 @@ i.fas, i.fab {
 }
 
 #wordcloud {
-    width: 3.5cm;
-    height: 3.5cm;
+    width: 2.5cm;
+    height: 2.5cm;
 }
 
 #thp {
@@ -327,8 +337,8 @@ i.fas, i.fab {
 
 .logo-companies {
     vertical-align: middle;
-    width: 4mm;
-    height: 4mm;
+    width: 5mm;
+    height: auto;
     border-radius: 10%;
     margin: 4px 15px;
     float: right;
@@ -336,9 +346,17 @@ i.fas, i.fab {
 
 #logo-tedx {
     vertical-align: middle;
-    width: 7.5mm;
+    width: 9.5mm;
     height: auto;
     margin: 4px 8px;
+    float: right;
+}
+
+#logo-texart {
+    vertical-align: middle;
+    width: 5mm;
+    height: auto;
+    margin: -5px 15px;
     float: right;
 }
 
@@ -381,6 +399,13 @@ i.fas, i.fab {
     margin: 2px 0;
 }
 
+.SEO {
+    vertical-align: middle;
+    width: 5mm;
+    height: auto;
+    margin: 2px;
+}
+
 .suites {
     margin: 2px auto;
     display: block;
@@ -396,12 +421,18 @@ i.fas, i.fab {
 .hobbies-section {
     padding: 20px;
     text-align: center;
-    margin: 20px -15px 5px -15px;
+    margin: 0px -15px 5px -15px;
 }
 
 .hobbies {
-    display: flex;
     margin: 20px -15px 5px -15px;
+    display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.hobbies > div {
+    width: 25%;
 }
 
 
@@ -416,9 +447,15 @@ i.fas, i.fab {
 
 }
 
-/* .sports, .other {
+/* .sports, .music {
 } */
 
-.music, .travel {
-    margin-top: 100px;
+.other, .travel {
+    margin-top: 60px;
+    padding: auto -100px;
 }
+
+.other p, .travel p {
+margin: auto -100%;
+}
+
