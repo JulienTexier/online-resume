@@ -20,6 +20,8 @@
     <script src="https://kit.fontawesome.com/986b25c4be.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
   <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -28,7 +30,7 @@
     <img src="images/avatar.jpg" alt="Profile picture" class="avatar" />
     <div class="hello">
       <h1>Julien TEXIER</h1>
-      <h2>Master's in Management</h2>
+      <h2 id="diploma">Master's in Management</h2>
       <h3>Looking for a career in Project Management</h3>
     </div>
     <div class="information">
@@ -40,7 +42,7 @@
           <td>
             <p class="contact-address">
               41, rue de la fosse gauchère <br />
-              Vern sur Seiche <br />
+              35 770 Vern sur Seiche <br />
               FRANCE
             </p>
           </td>
@@ -50,10 +52,11 @@
         </td>
         <td>
           <p class="contact-info">
-            <i class="fas fa-at"> </i> julien.texier@ieseg.fr<br />
-            <i class="fas fa-phone"></i> +33 6 22 45 69 47 <br />
-            <i class="fab fa-skype"></i> Julien.texier12 <br />
-            <i class="fab fa-linkedin"></i> Julien Texier
+            <a href="mailto:julien.texier@ieseg.fr"><i class="fas fa-at fa-sm"> </i> julien.texier@ieseg.fr</a><br />
+            <a href="tel:33622456947"><i class="fas fa-phone fa-sm"></i> +33 6 22 45 69 47 </a><br />
+            <a href="skype:Julien.texier12?call"><i class="fab fa-skype"></i> Julien.texier12 </a><br />
+            <a href="https://github.com/JulienTexier" target="_blank"><i class="fab fa-github"></i> JulienTexier </a><br />
+            <a href="https://www.linkedin.com/in/texierjulien/" target="_blank"><i class="fab fa-linkedin"></i> texierjulien
           </p>
     </div>
     </td>
@@ -98,8 +101,8 @@
                 Lille, FRANCE
                 <img id="aascb" src="images/aacsb-blue-web.png" alt="AACSB logo">
                 <img id="equis" src="images/equis.png" alt="Equis logo">
-                <br>
-                <span>From 2015 to 2020</span><img id="amba" src="images/amba.png" alt="AMBA logo"></h4><br><br><br>
+                <img id="amba" src="images/amba.png" alt="AMBA logo"><br>
+                <span>From 2015 to 2020</span></h4><br><br><br>
 
             </div>
             <div class="subrightcolumn">
@@ -136,7 +139,9 @@
           <div id="container-language">
 
             <div class="container-skills">
-              <div class="skills en"></div>
+              <div class="meter en">
+                <span style="width: 97%"></span>
+              </div>
             </div>
             <p class="language-name">English</p>
           </div>
@@ -149,7 +154,9 @@
           <div id="container-language">
 
             <div class="container-skills">
-              <div class="skills es"></div>
+              <div class="meter es">
+                <span style="width: 90%"></span>
+              </div>
             </div>
             <p class="language-name">Spanish</p>
           </div>
@@ -162,7 +169,9 @@
           <div id="container-language">
 
             <div class="container-skills">
-              <div class="skills po"></div>
+              <div class="meter po">
+                <span style="width: 45%"></span>
+              </div>            
             </div>
             <p class="language-name">Portuguese</p>
           </div>
@@ -174,7 +183,9 @@
 
           <div id="container-language">
             <div class="container-skills">
-              <div class="skills fr"></div>
+              <div class="meter fr">
+                <span style="width: 100%"></span>
+              </div>            
             </div>
             <p class="language-name">French</p>
           </div>
@@ -371,6 +382,19 @@
     $('.row #experience, .row #skills').css({height:maxHeight + 'px'});
     });
   </script>
+  	<!-- <script>
+      $(function() {
+        $(".meter > span").each(function() {
+          $(this)
+            .data("origWidth", $(this).width())
+            .width(0)
+            .animate({
+              width: $(this).data("origWidth")
+            }, 3400);
+        });
+      });
+    </script> -->
+  
 </body>
 
 </html>

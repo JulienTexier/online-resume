@@ -5,6 +5,11 @@ body {
   font-size: 15px;
 }
 
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 h1 {
   font-family: "Encode Sans", sans-serif;
   font-size: 48px;
@@ -28,10 +33,11 @@ h2 {
 h3 {
   font-family: "Encode Sans", sans-serif;
   font-family: Quicksand;
-  font-size: 17px;
+  font-size: 23px;
   font-style: normal;
   font-weight: 400;
   line-height: 18.2px;
+  margin-top: 15px;
 }
 
 h4 {
@@ -134,6 +140,10 @@ i.fab {
   text-align: center;
 }
 
+#diploma {
+  font-size: 25px;
+}
+
 #info-header {
   background-color: rgb(224, 221, 221);
   display: flex;
@@ -150,10 +160,13 @@ i.fab {
 .contact-address {
   border-left: solid grey thin;
   padding-left: 10px;
-  margin-top: 10px;
   float: right;
   width: 200px;
   font-size: 14px;
+}
+
+.contact-address {
+  margin-top: 10px;
 }
 
 .contact-info-title,
@@ -165,7 +178,6 @@ i.fab {
   font-style: normal;
   font-weight: 400;
   display: inline-block;
-  padding-top: 10px;
 }
 
 .information {
@@ -198,11 +210,11 @@ i.fab {
 }
 
 /* .education-info {
-    font-family: Quicksand;
-    font-size: 8px;
-    font-style: normal;
-    font-weight: 400;
-} */
+      font-family: Quicksand;
+      font-size: 8px;
+      font-style: normal;
+      font-weight: 400;
+  } */
 
 /* WORK EXPERIENCE */
 
@@ -217,11 +229,6 @@ i.fab {
 
 .container-skills {
   width: 65%;
-  /* Full width */
-  background-color: #ddd;
-  /* Grey background */
-  border: solid;
-  border-width: thin;
   float: right;
 }
 
@@ -229,8 +236,7 @@ i.fab {
   padding-bottom: 10px;
 }
 
-.fr {
-  width: 100%;
+.fr span {
   background: linear-gradient(
     to right,
     #0055a4 33.33%,
@@ -240,8 +246,7 @@ i.fab {
   );
 }
 
-.en {
-  width: 97%;
+.en span {
   background: linear-gradient(
     to right,
     #169b62 33.33%,
@@ -251,18 +256,19 @@ i.fab {
   );
 }
 
-.es {
-  width: 92%;
+.es span {
   background: linear-gradient(
-    to bottom,
-    #aa151b 16.66%,
-    #f1bf00 0,
-    #fff 83.32%,
-    #aa151b 0
+    180deg,
+    #d03e3e 0%,
+    #d03e3e 25%,
+    #ffc100 25%,
+    #ffc100 75%,
+    #d03e3e 75%,
+    #d03e3e 100%
   );
 }
 
-.po {
+.po span {
   width: 52%;
   background: linear-gradient(to right, #006600 33.33%, #ff0000 0);
 }
@@ -276,6 +282,7 @@ i.fab {
   position: relative;
   list-style-type: none;
   margin-bottom: 0.02rem;
+  padding-left: 10px;
 }
 
 .check-list li:before {
@@ -350,20 +357,22 @@ i.fab {
   vertical-align: middle;
   width: 4mm;
   height: auto;
-  margin-left: 20px;
+  margin-left: 30px;
+  margin-top: 0px;
 }
 
 #equis {
   vertical-align: middle;
   width: 6mm;
   height: auto;
+  margin-top: 0px;
 }
 
 #amba {
   vertical-align: middle;
   width: 10mm;
   height: auto;
-  margin-left: 15px;
+  margin-top: 0px;
 }
 
 .logo-companies {
@@ -448,7 +457,7 @@ i.fab {
 /* HOBBIES */
 
 .hobbies-section {
-  padding: 20px;
+  padding-top: 15px;
   text-align: center;
   margin: 0px 5px;
 }
@@ -461,7 +470,7 @@ i.fab {
 }
 
 .hobbies i {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .hobbies > div {
@@ -480,7 +489,50 @@ i.fab {
 
 .sports,
 .music {
-  margin-top: 50px;
+  margin-top: 30px;
+}
+
+.meter {
+  box-sizing: unset;
+  height: 15px; /* Can be anything */
+  width: 100% !important;
+  position: relative;
+  padding-right: 100px;
+  background: rgb(224, 221, 221);
+  box-shadow: 0.5px 1px 10px 0.5px #888888;
+
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  padding: 2px;
+  -webkit-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+  -moz-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+}
+.meter > span {
+  display: block;
+  height: 100%;
+  width: 100%;
+  -webkit-border-top-right-radius: 20px;
+  -webkit-border-bottom-right-radius: 20px;
+  -moz-border-radius-topright: 20px;
+  -moz-border-radius-bottomright: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  -webkit-border-top-left-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  -webkit-box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
+    inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
+    inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
+    inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
 }
 
 @media print {
@@ -488,5 +540,23 @@ i.fab {
   #info-header {
     box-shadow: 0.5px 1px 10px 0.5px #888888 !important;
     -webkit-print-color-adjust: exact;
+  }
+  .meter > span {
+    -webkit-box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
+      inset 0 -2px 6px rgba(0, 0, 0, 0.4) !important;
+    -moz-box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
+      inset 0 -2px 6px rgba(0, 0, 0, 0.4) !important;
+    box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
+      inset 0 -2px 6px rgba(0, 0, 0, 0.4) !important;
+    -webkit-print-color-adjust: exact;
+    -webkit-filter: opacity(1);
+  }
+  #thp,
+  #logo-ieseg {
+    margin-top: -20px !important;
+  }
+  a {
+    color: inherit !important;
+    text-decoration: inherit !important;
   }
 }
