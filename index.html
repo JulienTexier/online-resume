@@ -355,11 +355,21 @@
   </div>
 </div>
   <script>
-    $(document).ready(function () {
-      $("#formation").height($("#langues").height());
-      $("#experience").height($("#skills").height());
-    });
 
+    $(document).ready(function() {
+      var maxHeight = 0;
+    $('#langues').each(function() {
+    maxHeight = Math.max(maxHeight, $(this).height());
+    });
+    $('.row #formation, .row #langues').css({height:maxHeight + 'px'});
+    });
+    $(document).ready(function() {
+      var maxHeight = 0;
+    $('#skills').each(function() {
+        maxHeight = Math.max(maxHeight, $(this).height());
+    });
+    $('.row #experience, .row #skills').css({height:maxHeight + 'px'});
+    });
   </script>
 </body>
 
