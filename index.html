@@ -58,24 +58,30 @@
             <a href="https://github.com/JulienTexier" target="_blank"><i class="fab fa-github"></i> JulienTexier </a><br />
             <a href="https://www.linkedin.com/in/texierjulien/" target="_blank"><i class="fab fa-linkedin"></i> texierjulien
           </p>
-    </div>
-    </td>
+       </td>
+       <tr>
+         <td></td>
+         <td> 
+          <p id="nationality">10/06/1997, FRENCH</p>
+        </td>
+     </tr>
     </table>
   </div>
-
-
   </div>
+
+
+  </div id="cards">
   <div id="presentation">
     <div>Curious, open-minded and proactive, I specialized in Information Systems and Management before focusing on International Digital Marketing and web development. I can relate to a wide
       range of people and complement this with good attention to detail, an enjoyment of learning new things and working
       well under pressure. (Available from August 2020).</div>
   </div>
 
-
+<div>
   <div class="row">
-    <div class="leftcolumn">
+    <div id="education-section" class="leftcolumn">
       <div class="card">
-        <div id="formation">
+        <div id="education">
           <h2><i class="fas fa-graduation-cap"></i>EDUCATION</h2>
           <hr>
           <div class="row">
@@ -131,9 +137,9 @@
         </div>
       </div>
     </div>
-    <div class="rightcolumn">
+    <div id="languages-section" class="rightcolumn">
       <div class="card">
-        <div id="langues">
+        <div id="languages">
           <h2><i class="fas fa-comments"></i>LANGUAGES</h2>
           <hr>
           <div id="container-language">
@@ -197,7 +203,7 @@
 
 
   <div class="row">
-    <div class="leftcolumn">
+    <div id="experience-section" class="leftcolumn">
       <div class="card">
         <div id="experience">
           <h2><i class="fas fa-briefcase"></i>WORK EXPERIENCE</h2>
@@ -263,7 +269,7 @@
                 25+ supported companies, including Google, Facebook, Waze, Microsoft.
               </span>
             </div>
-          </div><br>
+          </div>
           <!-- <div class="row">
             <div class="subleftcolumn">
               <h4>Bureau des Arts ‘Tex’Art’<img id="logo-texart" src="images/texart.jpg" alt="Tex'Art logo">
@@ -285,7 +291,7 @@
         </div>
       </div>
     </div>
-    <div class="rightcolumn">
+    <div id="skills-section" class="rightcolumn">
       <div class="card">
         <div id="skills">
 
@@ -325,6 +331,7 @@
       </div>
     </div>
   </div>
+</div>
   <div class="hobbies-section">
     <h2>HOBBIES & INTERESTS</h2>
     <hr>
@@ -369,14 +376,14 @@
 
     $(document).ready(function() {
       var maxHeight = 0;
-    $('#langues').each(function() {
+    $('#languages, #education').each(function() {
     maxHeight = Math.max(maxHeight, $(this).height());
     });
-    $('.row #formation, .row #langues').css({height:maxHeight + 'px'});
+    $('.row #education, .row #languages').css({height:maxHeight + 'px'});
     });
     $(document).ready(function() {
       var maxHeight = 0;
-    $('#skills').each(function() {
+    $('#experience, #skills').each(function() {
         maxHeight = Math.max(maxHeight, $(this).height());
     });
     $('.row #experience, .row #skills').css({height:maxHeight + 'px'});

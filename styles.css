@@ -108,7 +108,6 @@ i.fab {
 
 .card {
   -webkit-print-color-adjust: exact;
-
   padding: 20px;
   box-shadow: 0.5px 1px 1px 0.5px #888888;
   border: #888888 solid thin;
@@ -163,6 +162,7 @@ i.fab {
   float: right;
   width: 200px;
   font-size: 14px;
+  line-height: 17px;
 }
 
 .contact-address {
@@ -183,6 +183,14 @@ i.fab {
 .information {
   width: 200px;
   height: auto;
+}
+
+#nationality {
+  font-family: "Encode Sans", sans-serif;
+  font-size: 13px;
+  font-variant: small-caps;
+  line-height: 0px;
+  color: #0055a4;
 }
 
 #presentation {
