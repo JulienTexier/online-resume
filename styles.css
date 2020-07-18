@@ -1,5 +1,11 @@
 /* GENERAL STYLE */
 
+html {
+  height: 210mm;
+  width: 297mm;
+  margin: auto;
+}
+
 body {
   margin: 15px 15px 15px 15px;
   font-size: 15px;
@@ -53,26 +59,24 @@ h5 {
   margin-bottom: 0;
   color: #0055a4;
   text-align: center;
-  margin: 15px auto 10px auto;
+  margin: 35px auto 10px auto;
 }
 
-p,
-span {
+p, span {
   font-family: Quicksand;
-  font-size: 14px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 400;
 }
 
 ul {
   font-family: Quicksand;
-  font-size: 12px;
+  font-size: 11px;
   font-style: normal;
   font-weight: 400;
 }
 
-i.fas,
-i.fab {
+i.fas, i.fab {
   margin-right: 10px;
 }
 
@@ -82,6 +86,7 @@ i.fab {
   width: 100%;
   margin: auto;
 }
+
 .leftcolumn {
   float: left;
   width: 70%;
@@ -122,8 +127,7 @@ i.fab {
 }
 
 @media screen and (max-width: 800px) {
-  .leftcolumn,
-  .rightcolumn {
+  .leftcolumn, .rightcolumn {
     width: 100%;
     padding: 0;
   }
@@ -156,13 +160,12 @@ i.fab {
   box-shadow: 0.5px 1px 10px 0.5px #888888;
 }
 
-.contact-info,
-.contact-address {
+.contact-info, .contact-address {
   border-left: solid grey thin;
   padding-left: 10px;
   float: right;
   width: 200px;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 17px;
 }
 
@@ -170,8 +173,7 @@ i.fab {
   margin-top: 10px;
 }
 
-.contact-info-title,
-.contact-address-title {
+.contact-info-title, .contact-address-title {
   display: inline;
   margin-right: 10px;
   font-family: Quicksand;
@@ -182,7 +184,7 @@ i.fab {
 }
 
 .information {
-  width: 200px;
+  width: 250px;
   height: auto;
 }
 
@@ -196,7 +198,6 @@ i.fab {
 
 #presentation {
   -webkit-print-color-adjust: exact;
-
   margin: 10px 0;
   padding: 15px;
   text-align: center;
@@ -214,7 +215,7 @@ i.fab {
 
 .education-details {
   font-family: Quicksand;
-  font-size: 14px;
+  font-size: 13px;
   font-style: oblique;
 }
 
@@ -234,6 +235,14 @@ i.fab {
   display: inline;
 }
 
+.work-info {
+  line-height: 1;
+  word-break: normal;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
 /* LANGUAGE */
 
 .container-skills {
@@ -246,35 +255,15 @@ i.fab {
 }
 
 .fr span {
-  background: linear-gradient(
-    to right,
-    #0055a4 33.33%,
-    #ffffff 0,
-    #fff 66.66%,
-    #ef4135 0
-  );
+  background: linear-gradient( to right, #0055a4 33.33%, #ffffff 0, #fff 66.66%, #ef4135 0);
 }
 
 .en span {
-  background: linear-gradient(
-    to right,
-    #169b62 33.33%,
-    #fff 0,
-    #fff 66.66%,
-    #ff883e 0
-  );
+  background: linear-gradient( to right, #169b62 33.33%, #fff 0, #fff 66.66%, #ff883e 0);
 }
 
 .es span {
-  background: linear-gradient(
-    180deg,
-    #d03e3e 0%,
-    #d03e3e 25%,
-    #ffc100 25%,
-    #ffc100 75%,
-    #d03e3e 75%,
-    #d03e3e 100%
-  );
+  background: linear-gradient( 180deg, #d03e3e 0%, #d03e3e 25%, #ffc100 25%, #ffc100 75%, #d03e3e 75%, #d03e3e 100%);
 }
 
 .po span {
@@ -331,6 +320,7 @@ i.fab {
   margin-right: auto;
   width: 100%;
   text-align: center;
+  margin-top: 20px;
 }
 
 /* IMAGES */
@@ -351,7 +341,7 @@ i.fab {
   width: 10mm;
   height: 10mm;
   border-radius: 50%;
-  margin: 0 30px;
+  margin: -20px 30px;
   float: right;
 }
 
@@ -360,6 +350,11 @@ i.fab {
   width: 6mm;
   height: 6mm;
   margin-left: 10px;
+}
+
+.div-accreditations {
+  float: right;
+  margin: -30px 10px;
 }
 
 #aascb {
@@ -411,7 +406,7 @@ i.fab {
 
 #logo-ieseg {
   vertical-align: middle;
-  width: 25mm;
+  width: 20mm;
   height: auto;
   margin: 0px 15px;
   float: right;
@@ -472,7 +467,7 @@ i.fab {
 }
 
 .hobbies {
-  margin: 20px 5px;
+  margin: 15px 5px;
   display: -ms-flex;
   display: -webkit-flex;
   display: flex;
@@ -482,7 +477,7 @@ i.fab {
   margin-bottom: 10px;
 }
 
-.hobbies > div {
+.hobbies>div {
   width: 25%;
 }
 
@@ -496,20 +491,19 @@ i.fab {
   color: rgba(88, 41, 41, 0.699);
 }
 
-.sports,
-.music {
-  margin-top: 30px;
+.sports, .music {
+  margin-top: 45px;
 }
 
 .meter {
   box-sizing: unset;
-  height: 15px; /* Can be anything */
+  height: 15px;
+  /* Can be anything */
   width: 100% !important;
   position: relative;
   padding-right: 100px;
   background: rgb(224, 221, 221);
   box-shadow: 0.5px 1px 10px 0.5px #888888;
-
   -moz-border-radius: 25px;
   -webkit-border-radius: 25px;
   border-radius: 25px;
@@ -518,7 +512,8 @@ i.fab {
   -moz-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
   box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
 }
-.meter > span {
+
+.meter>span {
   display: block;
   height: 100%;
   width: 100%;
@@ -534,35 +529,24 @@ i.fab {
   -moz-border-radius-bottomleft: 20px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  -webkit-box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
-    inset 0 -2px 6px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
-    inset 0 -2px 6px rgba(0, 0, 0, 0.4);
-  box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
-    inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
   position: relative;
   overflow: hidden;
 }
 
 @media print {
-  #presentation,
-  #info-header {
+  #presentation, #info-header {
     box-shadow: 0.5px 1px 10px 0.5px #888888 !important;
     -webkit-print-color-adjust: exact;
   }
-  .meter > span {
-    -webkit-box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
-      inset 0 -2px 6px rgba(0, 0, 0, 0.4) !important;
-    -moz-box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
-      inset 0 -2px 6px rgba(0, 0, 0, 0.4) !important;
-    box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
-      inset 0 -2px 6px rgba(0, 0, 0, 0.4) !important;
+  .meter>span {
+    -webkit-box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4) !important;
+    -moz-box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4) !important;
+    box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4) !important;
     -webkit-print-color-adjust: exact;
     -webkit-filter: opacity(1);
-  }
-  #thp,
-  #logo-ieseg {
-    margin-top: -20px !important;
   }
   a {
     color: inherit !important;
